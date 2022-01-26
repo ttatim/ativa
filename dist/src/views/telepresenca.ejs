@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../../js/telepresenca-page.js" defer></script>
+    <script src="../../js/User.js" defer></script>
+    <script src="../../js/peer.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="../../js/telepresenca.js" defer></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+
+    <title>Telepresenca</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="top-space"></div>
+        <div class="container-info">
+          <div class="info">
+            <div class="container-title-info">
+              <h2>AVISOS</h2>
+            </div>
+
+            <div class="container-txt-info">
+              <!-- Como pode verificar no Dicionário Priberam da Língua Portuguesa, o
+              verbo exitar significa “ter êxito” e é usado como intransitivo
+              (ex.: as suas investigações exitaram). -->
+            </div>
+          </div>
+        </div>
+        <div class="container-qrcode">
+          <img src="../../img/frame.png" alt="" class="img-qrcode" />
+          <span class="txt-qrcode">CENTRAL DE ATENDIMENTO 24H</span>
+        </div>
+        <div class="container-hour">
+          <div class="container-hour-time">
+            <div class="container-hour-qdr">
+              <div class="hour-time hour">12</div>
+              <div class="hour-txt">HORAS</div>
+            </div>
+            <div class="container-hour-qdr">
+              <div class="hour-time min">09</div>
+              <div class="hour-txt">MINUTOS</div>
+            </div>
+            <div class="container-hour-qdr">
+              <div class="hour-time sec">22</div>
+              <div class="hour-txt">SEGUNDOS</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-data">
+          <div class="data">
+            <span class="data-strong">13 de Abril</span
+            ><span class="data-medium">de</span>
+            <span class="data-strong">2021</span>
+          </div>
+        </div>
+        <div class="container-logo logout">
+          <div>
+            <span>Developed by </span>
+            <img src="../../img/BETRONIC-white.png" alt="" class="img-log" />
+          </div>
+        </div>
+      </div>
+      <div class="container-rigth">
+        <div class="container-video">
+          <div class="video-title">
+            <span class="video-title-strong"><%=name%></span>
+          </div>
+          <div id="video-grid" class="video"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/script.js" defer></script>
+  </body>
+</html>

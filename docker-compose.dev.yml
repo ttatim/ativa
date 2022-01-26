@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+  # app:
+  #   build: .
+  #   container_name: ative_tele-app
+  #   ports:
+  #     - 3000:3000
+  #   volumes:
+  #     - .:/home/node/app
+  #   env_file:
+  #     - ./.env
+  #   depends_on:
+  #     - db
+
+  db:
+    build: ./.docker/mysql
+    container_name: ativa_tele-db
+    restart: always
+    tty: true
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./.docker/dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=ativa_tele
+      - MYSQL_ROOT_PASSWORD=ativa@202122
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1

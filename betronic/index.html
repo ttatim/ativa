@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <title>Telepresença</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="left">
+            <div class="container-icon center">
+                <img class="icon" src="img/icon-white.svg" alt="" srcset="">
+            </div>
+            <div class="info center">
+                <span class="info-portaria"><strong>PORTARIA</strong></span>
+                <span class="betronic">betronic</span>
+            </div>
+            <div class="container-qrcode center">
+                <img class="img-qrcode" src="img/frame.png" alt="" srcset="">
+            </div>
+            <div class="contacts">
+                <span class="info-contacts">Central de Atendimento 24h</span>
+                <div class="whatsapp">
+                    <img class="img-icon" src="img/whatsapp.svg">
+                    <span class="numbers">(11) 94210-8650</span>
+                </div>
+                <div class="phone">
+                    <img class="img-icon" src="img/placa-de-telefone.svg">
+                    <div class="phone-numbers">
+                        <span class="numbers">(11) 3443-0461</span>
+                        <span class="numbers">(11) 3443-0465</span>
+                        <span class="numbers">(11) 3443-0458</span>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="img/mensagem.svg" class="img-icon">
+                    <div class="container-email">
+                        <span class="emails">atendimento@betronic.com.br</span>
+                        <span class="emails">sac@betronic.com.br</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-now center">
+                <strong><span class="hour">21</span><span class="sec">:</span><span class="min">21</span></strong>
+                <strong><span class="date">1 jan 2020</span></strong>
+            </div>
+        </div>
+        <div class="right">
+            <div class="container-title center">
+                <strong><span class="name-condominium">CONDOMÍNIO</span></strong>
+            </div>
+            <div class="container-img-stream center">
+                <!-- <img class="img-stream" src="http://betroniccorporation.com:4321/cam_3.cgi" alt="" srcset=""> -->
+                <iframe style="width: 100%; height: 100%;" src="camera.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
